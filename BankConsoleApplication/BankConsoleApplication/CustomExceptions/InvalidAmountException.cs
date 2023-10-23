@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BankConsoleApplication.CustomExceptions
 {
-    internal class InvalidAmountException
+    internal class InvalidAmountException:Exception
     {
+        public InvalidAmountException(string message) : base(message) { }
     }
 }

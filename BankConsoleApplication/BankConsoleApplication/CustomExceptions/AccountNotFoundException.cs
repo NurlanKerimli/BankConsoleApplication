@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BankConsoleApplication.CustomExceptions
 {
-    internal class AccountNotFoundException
+    internal class AccountNotFoundException:Exception
     {
+        public AccountNotFoundException(string message) : base(message) { }
+
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BankConsoleApplication.CustomExceptions
 {
-    internal class InsufficientFundsException
+    internal class InsufficientFundsException:Exception
     {
+        public InsufficientFundsException(string message) : base(message) { }
     }
 }

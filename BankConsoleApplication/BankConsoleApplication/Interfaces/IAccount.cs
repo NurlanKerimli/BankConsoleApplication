@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace BankConsoleApplication.Interfaces
 {
-    internal interface IAccount
+    public interface IAccount
     {
+       int AccountId {  get; }
+       decimal Balance {  get; }
+
+       void Deposit(decimal amount);
+       void Withdraw(decimal amount);
     }
 }
